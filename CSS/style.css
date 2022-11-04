@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.body {
+  background-color: rgb(191, 191, 191);
+  padding: 20px;
+}
+
+.header {
+  background-color: teal;
+  color: white;
+  max-width: 190px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
