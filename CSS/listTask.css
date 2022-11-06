@@ -7,12 +7,19 @@
 .list__task {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+  padding: 10px;
+  text-decoration: none;
   align-items: center;
-  margin: 10px;
-  padding: 5px;
+  border-bottom: 1px solid #eee;
+  word-break: break-all;
 }
 
-.list__taskItem{
+list__task--hidden {
+  display: none;
+}
+
+.list__taskItem {
   padding-left: 10px;
 }
 
@@ -35,4 +42,19 @@
 .list__taskButton--remove {
   background-color: rgb(238, 43, 43);
   justify-self: flex-end;
+}
+
+.tasks__list {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+  padding: 10px;
+  text-decoration: none;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  word-break: break-all;
+}
+
+.tasks__list--hidden {
+  display: none;
 }
