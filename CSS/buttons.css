@@ -15,7 +15,7 @@
   color: hsl(180, 100%, 35%);
 }
 
-.buttons__button:disabled {
+.buttons__button.buttons__button:disabled {
   color: #ddd;
   cursor: default;
 }
