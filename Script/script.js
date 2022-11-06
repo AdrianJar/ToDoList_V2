@@ -56,9 +56,8 @@
 
         for (const task of tasks) {
             htmlString += `
-        <li class="list__task${
-            task.done && hideDoneTasks ? " tasks__list--hidden" : ""
-          }">
+        <li class="list__task${task.done && hideDoneTasks ? " tasks__list--hidden" : ""
+                }">
             <button class="js-done list__taskButton">
                 ${task.done ? "✔️" : ""}
             </button>
@@ -112,12 +111,13 @@
             return;
         }
         htmlButtonsString += `
-    <button class="js-hideDoneTask buttons__button"> ${hideDoneTasks ? "Pokaż " : "Ukryj "
+        <h2>Lista do zrobienia</h2>
+        <button class="js-hideDoneTask buttons__button"> ${hideDoneTasks ? "Pokaż " : "Ukryj "
             }ukończone</button>
-    <button ${tasks.every(({ done }) => done) ? "disabled" : ""}
+        <button ${tasks.every(({ done }) => done) ? "disabled" : ""}
             class="js-setAllTasksDone buttons__button">
               Ukończ wszystkie
-            </button>`;
+        </button>`;
 
 
         document.querySelector(".js-buttonEvents").innerHTML = htmlButtonsString;
